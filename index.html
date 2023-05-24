@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Тындекс Маркет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <div class="search-container">
+        <form action="/search">
+          <input type="text" placeholder="Поиск...">
+          <button type="submit">Поиск товаров</button>
+        </form>
+    </div>
+    <div class="button-container">
+        <button class="btn1">Корзина</button>
+        <button class="btn">Регистрация</button>
+        <button class="btn">Вход</button>
+    </div>
+</header>
+<nav>
+  <div class="slideshow-container">
+    <img class="mySlides" src="img/img1.webp">
+    <img class="mySlides" src="img/img2.webp">
+    <img class="mySlides" src="img/img3.webp">
+    <img class="mySlides" src="img/img4.webp">
+  </div>
+
+<script type="text/javascript">
+    let index = 0;
+displayImages();
+
+function displayImages() {
+  let i;
+  const images = document.getElementsByClassName("mySlides");
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  index++;
+  if (index > images.length) {
+    index = 1;
+  }
+  images[index - 1].style.display = "block";
+  setTimeout(displayImages, 3000); // меняет картинки каждые 3 секунды
+}
+</script>
+</nav>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+          <div class="product">
+            <div class="image">
+              <img src="img/headphones.webp" alt="">
+            </div>
+            <div class="info">
+              <h3>Наушники</h3>
+
+              <ul class="rating">
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star-half"></ion-icon></li>
+              </ul>
+
+              <div class="info-price">
+                <span class="price">8000<small>₽</small></span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>  
+
+
+    <div class="row">
+      <div class="col-md-4">
+          <div class="product">
+            <div class="image">
+              <img src="img/cat.webp" alt="">
+            </div>
+            <div class="info">
+              <h3>Кашак</h3>
+
+              <ul class="rating">
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star-half"></ion-icon></li>
+              </ul>
+
+              <div class="info-price">
+                <span class="price">500<small>₽</small></span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>  
+
+
+    <div class="row">
+      <div class="col-md-4">
+          <div class="product">
+            <div class="image">
+              <img src="img/iphone.webp" alt="">
+            </div>
+            <div class="info">
+              <h3>iPhone 17</h3>
+
+              <ul class="rating">
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star-half"></ion-icon></li>
+              </ul>
+
+              <div class="info-price">
+                <span class="price">117 000<small>₽</small></span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>  
+
+
+    <div class="row">
+      <div class="col-md-4">
+          <div class="product">
+            <div class="image">
+              <img src="img/orig.webp" alt="">
+            </div>
+            <div class="info">
+              <h3>Жвачка</h3>
+
+              <ul class="rating">
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star-half"></ion-icon></li>
+              </ul>
+
+              <div class="info-price">
+                <span class="price">200<small>₽</small></span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>  
+
+
+    <div class="row">
+      <div class="col-md-4">
+          <div class="product">
+            <div class="image">
+              <img src="img/shark.webp" alt="">
+            </div>
+            <div class="info">
+              <h3>Акула</h3>
+
+              <ul class="rating">
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star"></ion-icon></li>
+                <li><ion-icon name="star-half"></ion-icon></li>
+              </ul>
+
+              <div class="info-price">
+                <span class="price">400<small>₽</small></span>
+                <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>  
+
+
+
+  <div class="row">
+    <div class="col-md-4">
+        <div class="product">
+          <div class="image">
+            <img src="img/heart.webp" alt="">
+          </div>
+          <div class="info">
+            <h3>Кулон сердце</h3>
+
+            <ul class="rating">
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star"></ion-icon></li>
+              <li><ion-icon name="star-half"></ion-icon></li>
+            </ul>
+
+            <div class="info-price">
+              <span class="price">300<small>₽</small></span>
+              <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>  
+
+<div class="row">
+  <div class="col-md-4">
+      <div class="product">
+        <div class="image">
+          <img src="img/kolco.webp" alt="">
+        </div>
+        <div class="info">
+          <h3>Кольцо</h3>
+
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star-half"></ion-icon></li>
+          </ul>
+
+          <div class="info-price">
+            <span class="price">2000<small>₽</small></span>
+            <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+          </div>
+        </div>
+      </div>
+</div>
+</div>  
+
+<div class="row">
+  <div class="col-md-4">
+      <div class="product">
+        <div class="image">
+          <img src="img/coffe.webp" alt="">
+        </div>
+        <div class="info">
+          <h3>Кофе</h3>
+
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star-half"></ion-icon></li>
+          </ul>
+
+          <div class="info-price">
+            <span class="price">200<small>₽</small></span>
+            <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+          </div>
+        </div>
+      </div>
+</div>
+</div>  
+
+<div class="row">
+  <div class="col-md-4">
+      <div class="product">
+        <div class="image">
+          <img src="img/mask.webp" alt="">
+        </div>
+        <div class="info">
+          <h3>Балаклава</h3>
+
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star-half"></ion-icon></li>
+          </ul>
+
+          <div class="info-price">
+            <span class="price">300<small>₽</small></span>
+            <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+          </div>
+        </div>
+      </div>
+</div>
+</div>  
+
+<div class="row">
+  <div class="col-md-4">
+      <div class="product">
+        <div class="image">
+          <img src="img/tapki.webp" alt="">
+        </div>
+        <div class="info">
+          <h3>Тапочки</h3>
+
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star-half"></ion-icon></li>
+          </ul>
+
+          <div class="info-price">
+            <span class="price">500<small>₽</small></span>
+            <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+          </div>
+        </div>
+      </div>
+</div>
+</div>  
+
+<div class="row">
+  <div class="col-md-4">
+      <div class="product">
+        <div class="image">
+          <img src="img/nutella.webp" alt="">
+        </div>
+        <div class="info">
+          <h3>Nutella</h3>
+
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star-half"></ion-icon></li>
+          </ul>
+
+          <div class="info-price">
+            <span class="price">400<small>₽</small></span>
+            <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+          </div>
+        </div>
+      </div>
+</div>
+</div>  
+
+<div class="row">
+  <div class="col-md-4">
+      <div class="product">
+        <div class="image">
+          <img src="img/rat.webp" alt="">
+        </div>
+        <div class="info">
+          <h3>Крыса</h3>
+
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star-half"></ion-icon></li>
+          </ul>
+
+          <div class="info-price">
+            <span class="price">500<small>₽</small></span>
+            <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+          </div>
+        </div>
+      </div>
+</div>
+</div>  
+
+<footer>
+  <div class="footer-container">
+    <div class="contact-buttons">
+      <button>Наша группа</button>
+      <button>Наш канал</button>
+    </div>
+    <button class="feedback">Отзывы</button>
+  </div>
+</footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
